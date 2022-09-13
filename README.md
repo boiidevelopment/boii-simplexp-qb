@@ -18,6 +18,7 @@ Includes commands to check a players current xp and edit a players xp.
 3) Restart server or type `refresh; ensure boii-simplexp` into your F8
 
 ### ACE PERMISSIONS ###
+```
 - In order to be able to use the edit xp command you need to have the correct permissions
 - Copy the following into your `server.cfg` file
 - Replace "YOUR IDENTIFIER" with your identifier
@@ -25,6 +26,7 @@ Includes commands to check a players current xp and edit a players xp.
 
 add_ace qbcore.god boii.simplexp allow
 add_principal identifier.fivem:"YOUR IDENTIFIER" qbcore.god
+```
 
 ### HOW TO USE ###
 
