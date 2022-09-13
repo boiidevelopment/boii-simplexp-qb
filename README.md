@@ -61,7 +61,7 @@ Server
 TriggerClientEvent('boii-simplexp:cl:XP', source,  1, 'drugxp', 100)
 ```
 ### PREVIEW ###
-COMING SOON
+[YouTube](https://www.youtube.com/shorts/bugtOF0iOsY)
 
 ### SUPPORT ###
 [Discord](https://discord.gg/MUckUyS5Kq)
