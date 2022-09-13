@@ -1,2 +1,59 @@
-# boii-simplexp-qb
-FiveM - Simple XP export script for QBCore
+# BOII | Development - Simple skills export script 
+
+Here we have a simple XP script to allow adding or removing xp via exports from any script using QBCore metadata.
+Includes commands to check a players current xp and edit a players xp.
+
+### USAGE ###
+
+- /checkxp to check a players xp
+- /editxp to edit a players xp you can add or remove
+- use the export provided within any script to add or remove xp
+
+### INSTALL ### 
+
+1) Drag and drop `boii-skills` into your server resources
+2) Add `ensure boii-skills` into your server.cfg if you are using this method of ensuring
+3) Follow the instructions provided under **ACE PERMISSIONS** in order to have access to the edit xp command
+3) Restart server or type `refresh; ensure boii-skills` into your F8
+
+### ACE PERMISSIONS ###
+- In order to be able to use the edit xp command you need to have the correct permissions
+- Copy the following into your `server.cfg` file
+- Replace "YOUR IDENTIFIER" with your identifier
+- You can use any identifer just remember to edit `.fivem` accordingly
+
+add_ace qbcore.god boii.skills allow
+add_principal identifier.fivem:"YOUR IDENTIFIER" qbcore.god
+
+### HOW TO USE ###
+
+--<!>-- Commands --<!>--
+- Check xp command
+/checkxp "PLAYERS ID" "METADATA NAME"
+
+- Edit xp command
+/editxp "PLAYERS ID" "CHOICE: 1 = ADD, 2 = REMOVE" "METADATA NAME" "AMOUNT"
+
+--<!>-- CLIENT SIDE --<!>--
+- Export to add/remove xp from client side scripts
+-- "1 = ADD, 2 = REMOVE" "METADATA NAME" "AMOUNT"
+
+exports['boii-skills']XP(args, metadata, amount)
+
+- Add xp example
+exports['boii-skills']XP(1, 'drugxp', 10)
+
+- Remove xp example
+exports['boii-skills']XP(2, 'drugxp', 10)
+
+--<!>-- SERVER SIDE --<!>--
+- Event to trigger from server side scripts to add/remove xp
+- "SOURCE" "1 = ADD, 2 = REMOVE" "METADATA NAME" "AMOUNT"
+TriggerClientEvent('boii-skills:cl:XP', source,  1, 'drugxp', 100)
+
+### PREVIEW ###
+COMING SOON
+
+### DOWNLOAD ###
+TEBEX: 
+GITHUB:
