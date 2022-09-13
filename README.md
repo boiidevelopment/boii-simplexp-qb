@@ -44,13 +44,13 @@ Client
 - Export to add/remove xp from client side scripts; 
 - "1 = ADD, 2 = REMOVE" "METADATA NAME" "AMOUNT"
 
-exports['boii-simplexp']XP(args, metadata, amount)
+exports['boii-simplexp']:XP(args, metadata, amount)
 
 - Add xp example
-exports['boii-simplexp']XP(1, 'drugxp', 10)
+exports['boii-simplexp']:XP(1, 'drugxp', 10)
 
 - Remove xp example
-exports['boii-simplexp']XP(2, 'drugxp', 10)
+exports['boii-simplexp']:XP(2, 'drugxp', 10)
 ```
 
 Server
