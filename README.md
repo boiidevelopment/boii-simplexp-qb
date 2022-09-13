@@ -12,7 +12,7 @@ Includes commands to check a players current xp and edit a players xp.
 
 ### INSTALL ### 
 
-1) Drag and drop `boii-simplexp` into your server resources
+1) Rename the folder to `boii-simplexp` and drag into your server resources
 2) Add `ensure boii-simplexp` into your server.cfg if you are using this method of ensuring
 3) Follow the instructions provided under **ACE PERMISSIONS** in order to have access to the edit xp command
 3) Restart server or type `refresh; ensure boii-simplexp` into your F8
