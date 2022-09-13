@@ -29,31 +29,37 @@ add_principal identifier.fivem:"YOUR IDENTIFIER" qbcore.god
 ### HOW TO USE ###
 
 Commands
-- Check xp command
+```
+- Check xp command 
 /checkxp "PLAYERS ID" "METADATA NAME"
 
 - Edit xp command
 /editxp "PLAYERS ID" "CHOICE: 1 = ADD, 2 = REMOVE" "METADATA NAME" "AMOUNT"
+```
 
 Client
-- Export to add/remove xp from client side scripts; "1 = ADD, 2 = REMOVE" "METADATA NAME" "AMOUNT"
+```
+- Export to add/remove xp from client side scripts; 
+- "1 = ADD, 2 = REMOVE" "METADATA NAME" "AMOUNT"
 
-- exports['boii-simplexp']XP(args, metadata, amount)
+exports['boii-simplexp']XP(args, metadata, amount)
 
-Add xp example
-- exports['boii-simplexp']XP(1, 'drugxp', 10)
+- Add xp example
+exports['boii-simplexp']XP(1, 'drugxp', 10)
 
-Remove xp example
-- exports['boii-simplexp']XP(2, 'drugxp', 10)
+- Remove xp example
+exports['boii-simplexp']XP(2, 'drugxp', 10)
+```
 
 Server
-- Event to trigger from server side scripts to add/remove xp; "SOURCE" "1 = ADD, 2 = REMOVE" "METADATA NAME" "AMOUNT"
+```
+- Event to trigger from server side scripts to add/remove xp 
+- "SOURCE" "1 = ADD, 2 = REMOVE" "METADATA NAME" "AMOUNT"
 
-- TriggerClientEvent('boii-simplexp:cl:XP', source,  1, 'drugxp', 100)
-
+TriggerClientEvent('boii-simplexp:cl:XP', source,  1, 'drugxp', 100)
+```
 ### PREVIEW ###
 COMING SOON
 
-### DOWNLOAD ###
-TEBEX: 
-GITHUB:
+### SUPPORT ###
+[Discord](https://discord.gg/MUckUyS5Kq)
