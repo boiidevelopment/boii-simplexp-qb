@@ -11,12 +11,15 @@ local Core = exports[CoreFolder]:GetCoreObject()
 -- Add or remove xp event to trigger from client
 RegisterServerEvent('boii-simplexp:sv:XP', function(args, metadata, amount)
     local pData = Core.Functions.GetPlayer(source)
-	local currentxp = pData.PlayerData.metadata[metadata]
+    local currentxp = pData.PlayerData.metadata[metadata]
     local args = tonumber(args)
     if args == 1 then
         pData.Functions.SetMetaData(metadata, (currentxp+amount))
     elseif args == 2 then
-        pData.Functions.SetMetaData(metadata, (currentxp-amount))
+	if currentxp < 1 then
+	    amount = 0		
+            pData.Functions.SetMetaData(metadata, (currentxp-amount))
+	end			
     end
 end)
 
