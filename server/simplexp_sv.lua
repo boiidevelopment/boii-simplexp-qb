@@ -29,7 +29,7 @@ RegisterCommand('editxp', function(source, args, rawCommand)
     local pData = Core.Functions.GetPlayer(id)
     local currentxp = pData.PlayerData.metadata[metadata]
     local name = GetPlayerName(id)
-    if not IsPlayerAceAllowed(source, 'boii.skills') then 
+    if not IsPlayerAceAllowed(source, 'boii.simplexp') then 
         TriggerClientEvent('chatMessage', source, "You do not have permission to use this command!")
         return
     end
